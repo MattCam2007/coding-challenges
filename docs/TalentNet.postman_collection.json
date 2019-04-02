@@ -122,7 +122,7 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:10802/api/product/1",
+					"raw": "http://localhost:10802/api/product/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -131,7 +131,7 @@
 					"path": [
 						"api",
 						"product",
-						"1"
+						"4"
 					]
 				},
 				"description": "Delete a Product"
@@ -186,6 +186,67 @@
 					]
 				},
 				"description": "Create Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/seed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:10802/api/seed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"seed"
+					]
+				},
+				"description": "Seed Test Data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/productCategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:10802/api/productCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"productCategory"
+					]
+				},
+				"description": "Get Product Categories"
 			},
 			"response": []
 		}
