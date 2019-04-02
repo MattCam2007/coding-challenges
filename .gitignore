@@ -1,2 +1,13 @@
-# IntelliJ project files
-.idea
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+/.idea
+composer.lock
+vendor/
+symfony.lock
+###< symfony/framework-bundle ###

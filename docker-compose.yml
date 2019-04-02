@@ -1,0 +1,25 @@
+version: '2.1'
+services:
+  talentnet-mysql:
+    image: mysql:5.7
+    container_name: talentnet-mysql
+    environment:
+      MYSQL_DATABASE: 'talentnet'
+      MYSQL_USER: 'talentnet'
+      MYSQL_PASSWORD: 't413n7n37'
+      MYSQL_ROOT_PASSWORD: 'r007p455'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+
+  talentnet-apache:
+    build: .
+    container_name: talentnet-apache
+    ports:
+      - "10802:80"
+    volumes:
+      - .:/var/www/html
+    command: "./bin/start && ./bin/console doctrine:migrations:migrate"
+    depends_on:
+      - talentnet-mysql

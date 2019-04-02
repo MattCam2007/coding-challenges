@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "9f446f79-6816-43f5-af1c-e8e839314634",
+		"name": "TalentNet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:10802/api/product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:10802/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"product"
+					]
+				},
+				"description": "Get All Products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/product/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:10802/api/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				},
+				"description": "Get Single Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/product/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Name",
+							"value": "Updating Product Name",
+							"type": "text"
+						},
+						{
+							"key": "ProductCategory",
+							"value": "Updating Product Category",
+							"type": "text"
+						},
+						{
+							"key": "Quantity",
+							"value": "802",
+							"type": "text"
+						},
+						{
+							"key": "Price",
+							"value": "8.02",
+							"type": "text"
+						},
+						{
+							"key": "Sku",
+							"value": "802bloor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10802/api/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				},
+				"description": "Update Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/product/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:10802/api/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				},
+				"description": "Delete a Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10802/api/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Name",
+							"value": "Creating Product Name",
+							"type": "text"
+						},
+						{
+							"key": "ProductCategory",
+							"value": "Creating Product Category",
+							"type": "text"
+						},
+						{
+							"key": "Quantity",
+							"value": "2007",
+							"type": "text"
+						},
+						{
+							"key": "Price",
+							"value": "20.07",
+							"type": "text"
+						},
+						{
+							"key": "Sku",
+							"value": "1452oxford",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10802/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10802",
+					"path": [
+						"api",
+						"product"
+					]
+				},
+				"description": "Create Product"
+			},
+			"response": []
+		}
+	]
+}

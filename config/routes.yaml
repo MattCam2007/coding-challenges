@@ -1,0 +1,39 @@
+# Product Entity
+get_single_product:
+  path: /api/product/{id}
+  controller: App\Controller\ProductController::getById
+  methods: GET
+delete_single_product:
+  path: /api/product/{id}
+  controller: App\Controller\ProductController::delete
+  methods: DELETE
+update_single_product:
+  path: /api/product/{id}
+  controller: App\Controller\ProductController::update
+  methods: PATCH
+get_all_product:
+  path: /api/product
+  controller: App\Controller\ProductController::getAll
+  methods: GET
+create_all_product:
+  path: /api/product
+  controller: App\Controller\ProductController::create
+  methods: POST
+
+# Product Category Entity
+get_all_product_categories:
+  path: /api/productCategory
+  controller: App\Controller\ProductCategoryController::getAll
+  methods: GET
+
+# Seed Data
+seed:
+  path: /api/seed
+  controller: App\Controller\Seed::handle
+  methods: POST
+
+# Top Level Status
+status:
+  path: /
+  controller: App\Controller\StatusController::status
+  methods: GET
